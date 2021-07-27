@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		385460AC26B0373B00D4430B /* Coordinator.h in Sources */ = {isa = PBXBuildFile; fileRef = 3854609C26B02F5100D4430B /* Coordinator.h */; };
+		385460AE26B0374300D4430B /* MainCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3854609626B02DED00D4430B /* MainCoordinator.m */; };
+		385460AF26B0374600D4430B /* EmbedCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E85E0F26AFA79000F2D506 /* EmbedCoordinator.h */; };
+		385460B126B0392F00D4430B /* MainCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3854609826B02E0000D4430B /* MainCoordinator.h */; };
+		385460B426B039E000D4430B /* Coordinatable.h in Sources */ = {isa = PBXBuildFile; fileRef = 385460B226B039D900D4430B /* Coordinatable.h */; };
 		71E85E1626AFA79000F2D506 /* EmbedCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71E85E0C26AFA79000F2D506 /* EmbedCoordinator.framework */; };
 		71E85E1B26AFA79000F2D506 /* EmbedCoordinatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71E85E1A26AFA79000F2D506 /* EmbedCoordinatorTests.m */; };
-		71E85E1D26AFA79000F2D506 /* EmbedCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E85E0F26AFA79000F2D506 /* EmbedCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,6 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3854609626B02DED00D4430B /* MainCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCoordinator.m; sourceTree = "<group>"; };
+		3854609826B02E0000D4430B /* MainCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCoordinator.h; sourceTree = "<group>"; };
+		3854609C26B02F5100D4430B /* Coordinator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = Coordinator.h; sourceTree = "<group>"; };
+		385460B226B039D900D4430B /* Coordinatable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; path = Coordinatable.h; sourceTree = "<group>"; };
 		71E85E0C26AFA79000F2D506 /* EmbedCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EmbedCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E85E0F26AFA79000F2D506 /* EmbedCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbedCoordinator.h; sourceTree = "<group>"; };
 		71E85E1026AFA79000F2D506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +58,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3854609A26B02E0700D4430B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				71E85E0F26AFA79000F2D506 /* EmbedCoordinator.h */,
+				3854609826B02E0000D4430B /* MainCoordinator.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		3854609B26B02E0F00D4430B /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				3854609626B02DED00D4430B /* MainCoordinator.m */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		385460A526B0316600D4430B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3854609C26B02F5100D4430B /* Coordinator.h */,
+				385460B226B039D900D4430B /* Coordinatable.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		71E85E0226AFA79000F2D506 = {
 			isa = PBXGroup;
 			children = (
@@ -71,7 +105,9 @@
 		71E85E0E26AFA79000F2D506 /* EmbedCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				71E85E0F26AFA79000F2D506 /* EmbedCoordinator.h */,
+				385460A526B0316600D4430B /* Protocols */,
+				3854609A26B02E0700D4430B /* Headers */,
+				3854609B26B02E0F00D4430B /* Implementations */,
 				71E85E1026AFA79000F2D506 /* Info.plist */,
 			);
 			path = EmbedCoordinator;
@@ -93,7 +129,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E85E1D26AFA79000F2D506 /* EmbedCoordinator.h in Headers */,
+				385460B126B0392F00D4430B /* MainCoordinator.h in Headers */,
+				385460AF26B0374600D4430B /* EmbedCoordinator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				385460B426B039E000D4430B /* Coordinatable.h in Sources */,
+				385460AC26B0373B00D4430B /* Coordinator.h in Sources */,
+				385460AE26B0374300D4430B /* MainCoordinator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

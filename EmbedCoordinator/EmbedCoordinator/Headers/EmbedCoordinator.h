@@ -6,6 +6,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Coordinator.h"
+#import "Coordinatable.h"
+#import "MainCoordinator.h"
 
 //! Project version number for EmbedCoordinator.
 FOUNDATION_EXPORT double EmbedCoordinatorVersionNumber;
